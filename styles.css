@@ -1,0 +1,93 @@
+@font-face {
+    font-family: outfit;
+    src: url("https://fonts.google.com/specimen/Outfit");
+}
+
+body {
+    font-family: 'outfit';
+    background-color: #f3e5d8;
+    margin: 0;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.recipe-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: block;
+}
+
+.recipe-content {
+    padding: 5%;
+}
+
+.preparation {
+    background-color: #fff7fc;
+    padding: 1px 5% 5px 5%;
+    line-height: 2;
+}
+
+.preparation h2 {
+    color: #812d4f;
+}
+
+.preparation li::marker {
+    color: #812d4f;
+}
+
+.preparation li::before,
+ol li::before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+}
+
+li::marker {
+    color: #774735;
+}
+
+ul li,
+ol li {
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    color: #8a5948;
+}
+
+hr {
+    border-bottom: 1px inset #ececec;
+}
+
+h2 {
+    color: #774735;
+}
